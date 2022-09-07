@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import OLDCounter from './components/counter/OLDCounter';
 
 class App extends Component {
 // class App extend React.Component {
@@ -30,10 +31,13 @@ class App extends Component {
         <p>{counterVal}</p>
         <button onClick={this.inc}>+</button>
         <button onClick={this.dec}>-</button>
+
+        <OLDCounter color='pink' />
+        <OLDCounter color='blue' />
+        <OLDCounter color='red' addCount={()} />
       </>
     )
   }
 }
 
 export default App;
-
